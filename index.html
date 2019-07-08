@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      html{
+        width: 100%;
+        height: 100%;
+      }
+      body{
+        width: 100%;
+        height: 100%;
+        background-color: #9DD9D1;
+      }
+    </style>
+    <!--修改默认样式-->
+    <title>vara</title>
+    <script>
+      window.onresize = function(){
+        if(document.documentElement.clientHeight < 500) {
+          var xiaokk = document.querySelector(".COMING-SOON")
+          var xiaokk1 = document.querySelector(".footer")
+          // console.log(xiaokk)
+          xiaokk.style.display = 'none'
+          xiaokk1.style.display = 'none'
+        }else if(document.documentElement.clientHeight >= 500){
+          var xiaokk = document.querySelector(".COMING-SOON")
+          var xiaokk1 = document.querySelector(".footer")
+          xiaokk.style.display = 'inline-block'
+          xiaokk1.style.display = 'inline-block'
+        }
+      }
+
+
+    //  判断屏幕大小
+      if(document.documentElement.clientWidth < 1024) {
+          // 在PC端根据屏幕 大小跳转 移动端页面
+        window.location.href = "http://mobile.varafresh.com/";
+      }else {
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
